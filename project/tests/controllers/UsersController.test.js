@@ -9,7 +9,7 @@ describe('UsersController', () => {
     const substituicao1 =  sinon.stub(User, 'create').resolves(USER);
  
     const req = {
-      body: USER,
+      body: USER, 
     };
 
     await controller.create(req, RESPONSE);
